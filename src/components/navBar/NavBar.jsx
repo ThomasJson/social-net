@@ -12,21 +12,21 @@ const NavBar = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Navbar fixed="top" bg={theme ? "transition lightMode" : "transition darkMode"} expand="lg" className={theme ? "transition lightMode" : "transition darkMode"} >
+    <Navbar fixed="top" bg={theme ? "navbar-light" : "navbar-dark"} expand="lg" className={theme ? "navbar-light" : "navbar-dark"} >
       <Container className="flex-row">
         <Navbar.Brand href="#home" className={theme ? "transition lightMode" : "transition darkMode"}>@itstompearson</Navbar.Brand>
 
         <Container fluid id="top-nav-items">
           <Container className="icons-container">
-            <BiPlus />
+            <BiPlus className={theme ? "transition lightMode" : "transition darkMode"}/>
           </Container>
           <Container className="icons-container">
-            <BiMessageRounded />
+            <BiMessageRounded className={theme ? "transition lightMode" : "transition darkMode"}/>
           </Container>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             id="burger-menu"
-            className={theme ? "transition lightMode" : "transition darkMode"}
+            className={theme ? "burger-light" : "burger-dark"}
           />
         </Container>
         <Navbar.Collapse id="basic-navbar-nav">

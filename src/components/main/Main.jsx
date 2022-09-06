@@ -1,10 +1,15 @@
 import "./main.scss";
-import React from "react";
+import React, {useContext} from "react";
 import BtnToggle from "../btnToggle/BtnToggle";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Main = () => {
+
+  const { theme } = useContext(ThemeContext);
   return (
-    <BtnToggle />
+    <main className={theme ? "transition lightMode" : "transition darkMode"}>
+      <BtnToggle />
+    </main>
   );
 };
 
