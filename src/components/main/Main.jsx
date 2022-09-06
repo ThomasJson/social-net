@@ -1,12 +1,10 @@
 import "./main.scss";
 import React from "react";
-import Form from "react-bootstrap/Form";
+import BtnToggle from "../btnToggle/BtnToggle";
 
 const Main = () => {
   return (
-    <Form id="switch-form">
-      <Form.Check type="switch" id="custom-switch" />
-    </Form>
+    <BtnToggle />
   );
 };
 

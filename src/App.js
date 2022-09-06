@@ -1,12 +1,14 @@
-import './App.scss';
-import 'bootstrap/dist/css/bootstrap.css';
-import React from 'react';
-import HomeScreen from './screen/homeScreen/HomeScreen';
-
+import "./App.scss";
+import "bootstrap/dist/css/bootstrap.css";
+import React from "react";
+import HomeScreen from "./screen/homeScreen/HomeScreen";
+import ThemeContextProvider from "./context/ThemeContext";
 
 function App() {
   return (
-    <HomeScreen />
+    <ThemeContextProvider>
+      <HomeScreen />
+    </ThemeContextProvider>
   );
 }
 
