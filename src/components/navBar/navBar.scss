@@ -21,15 +21,18 @@ a.navbar-brand {
 
 .burger-light {
   span.navbar-toggler-icon {
+    transition: all 0.3s ease-in-out;
     background-color: #f1f1f1;
     color: #333;
-    transition: all 0.3s ease-in-out;
+    
   }
 }
+
 .burger-dark {
   span.navbar-toggler-icon {
+    transition: all 0.3s ease-in-out;
     background-color: #333;
     color: #f1f1f1;
-    transition: all 0.3s ease-in-out;
+    
   }
 }
